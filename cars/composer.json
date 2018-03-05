@@ -1,0 +1,19 @@
+{
+    "name": "jn/webhallen",
+    "description": "All Your Pong Belongs To Me",
+    "require": {
+        "illuminate/database": "^5.6"
+    },
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Johan Nordström",
+            "email": "johan@digitalvillage.se"
+        }
+	],
+	"autoload": {
+		"psr-4": {
+			"App\\Models\\":"models"
+		}
+	}
+}
