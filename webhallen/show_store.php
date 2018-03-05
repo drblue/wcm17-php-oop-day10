@@ -15,9 +15,9 @@ echo "<h2>{$store->city}, {$store->streetname}</h2>";
 echo "<h3>Teams anmälda till butiken</h3>";
 echo "<ol>";
 
-$teams = Team::where('store_id', '=', $store_id)->get();
-foreach ($teams as $team) {
-	echo "<li><a href='show_team.php?team_id={$team->id}&store_id={$store_id}'>{$team->name}</a></li>";
+// $teams = Team::where('store_id', '=', $store_id)->get();
+foreach ($store->teams as $team) {
+	echo "<li><a href='show_team.php?team_id={$team->id}'>{$team->name}</a></li>";
 }
 
 echo "</ol>";
